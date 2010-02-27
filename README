@@ -1,0 +1,30 @@
+
+Currently Imagining something along the lines of:
+	- pyhellabot.py: Script to interface between Jabber and hellanzb
+	- (clever-name).py: Script to publish RSS feed of files for client machines
+	- (clever-name-client).py: Script to read the RSS feeds and pull down files
+
+Primary Functionality:
+======================
+ Should support a `q(ueue) nzbid` command which runs hellanzb to queue the nzbid, adds the download to a user's download queue(marked as unfinished), and IM's the people in the database for whom the report matches their interests.
+
+Secondary Functionality:
+========================
+* `s(tatus)` - prints out the status of current downloads
+* `c(ancel) dlid` - cancels the download specified by download id.
+* `b(andwidth report)` - prints out how much bandwidth has been used so far this month, from vnstat
+
+Download Management:
+====================
+* `add notice "regex"` - Adds a notice for this user for files/reports matching regex.
+* `list notices` - lists all notices for this user.
+* `del notice id` - deletes a notice idenitified by id
+* `pretend usr` - pretends to be usr for this session.
+
+Games:
+======
+* 8ball
+* urmom
+* fortune
+* trivia(multiuser)
+* madlibs(multiuser)
